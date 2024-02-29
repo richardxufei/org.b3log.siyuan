@@ -3,8 +3,7 @@
   <id>org.b3log.siyuan</id>
 
   <name>SiYuan</name>
-  <summary>A privacy-first personal knowledge management system, support fine-grained block-level
-    reference and Markdown WYSIWYG</summary>
+  <summary>A privacy-first personal knowledge management system, support fine-grained block-level reference and Markdown WYSIWYG</summary>
 
   <developer_name>Yunnan Liandi Technology Co., Ltd.</developer_name>
 
@@ -76,6 +75,7 @@
   </screenshots>
 
   <releases>
+    <release version="3.0.1" date="2024-02-27"/>
     <release version="2.12.8" date="2024-02-13"/>
     <release version="2.12.7" date="2024-02-06"/>
     <release version="2.12.6" date="2024-01-30"/>
