@@ -8,7 +8,6 @@ command: start-siyuan.sh
 finish-args:
   - --device=dri
   - --filesystem=home
-  - --filesystem=~/.local/share/fonts:ro
   - --share=ipc
   - --share=network
   - --socket=x11
