@@ -11,8 +11,7 @@ finish-args:
   - --filesystem=~/.local/share/fonts:ro
   - --share=ipc
   - --share=network
-  - --socket=wayland
-  - --socket=fallback-x11
+  - --socket=x11
   - --talk-name=org.kde.StatusNotifierWatcher
 modules:
   - name: siyuan
