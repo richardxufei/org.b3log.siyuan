@@ -1,6 +1,18 @@
-#!/bin/bash
+A#!/bin/bash
 
 set -oue pipefail
+
+WORKSPACE_CONFIG="/home/$USERNAME/.config/siyuan/workspace.json"
+
+# Creating default workspace configuration when first time opening SiYuan
+# then Siyuan will initialize directly.
+#
+# For users who installed SiYuan, please copy folder `~/SiYuan` in host
+# to `~/.var/app/org.b3log.siyuan/SiYuan` to recover your data, but dont
+# forget to clean up `~/.var/app/org.b3log.siyuan/SiYuan` to empty at first.
+if [ ! -d "$WORKSPACE_CONFIG" ]; then
+  echo "[\"/home/$USERNAME/SiYuan\"]" > "$WORKSPACE_CONFIG";
+fi
 
 EXTRA_ARGS=(--enable-features=Vulkan)
 
