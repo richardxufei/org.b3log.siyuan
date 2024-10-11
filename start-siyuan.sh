@@ -12,6 +12,13 @@ WORKSPACE_CONFIG_FILE="/home/$USER/.config/siyuan/workspace.json"
 # forget to clean up `~/.var/app/org.b3log.siyuan/SiYuan` to empty at first.
 if [ ! -s "$WORKSPACE_CONFIG_FILE" ]; then
     echo "[\"/home/$USER/SiYuan\"]" > "$WORKSPACE_CONFIG_FILE";
+
+    # Sending a notification to notice user
+    # where they can export documents at the first time start.
+    NOTIFICATION_BODY='You can only export documents such as pdf '\
+'to ~/Desktop, ~/Downloads and ~/Documents due to the Flakpak sandbox '\
+'limitation.'
+    notify-send "⚠️ Warning" "$NOTIFICATION_BODY"
 fi
 
 EXTRA_ARGS=(--enable-features=Vulkan)
