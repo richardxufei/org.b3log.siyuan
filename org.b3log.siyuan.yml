@@ -15,7 +15,8 @@ finish-args:
   - --filesystem=xdg-pictures:ro
   - --filesystem=xdg-videos:ro
   - --filesystem=xdg-music:ro
-  # Allow users export documents to ~/Desktop, ~/Downloads and ~/Documents
+  # Allow users to export documents and create new workspace
+  # to ~/Desktop, ~/Downloads and ~/Documents
   - --filesystem=xdg-desktop
   - --filesystem=xdg-download
   - --filesystem=xdg-documents
