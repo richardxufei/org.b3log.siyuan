@@ -2,7 +2,7 @@
 
 set -oue pipefail
 
-WORKSPACE_CONFIG_FILE="/home/$USER/.config/siyuan/workspace.json"
+WORKSPACE_CONFIG_FILE="$HOME/.config/siyuan/workspace.json"
 
 # Creating default workspace configuration when first time opening SiYuan
 # then Siyuan will initialize directly.
@@ -11,7 +11,7 @@ WORKSPACE_CONFIG_FILE="/home/$USER/.config/siyuan/workspace.json"
 # to `~/.var/app/org.b3log.siyuan/SiYuan` to recover your data, but dont
 # forget to clean up `~/.var/app/org.b3log.siyuan/SiYuan` to empty at first.
 if [ ! -s "$WORKSPACE_CONFIG_FILE" ]; then
-    echo "[\"/home/$USER/SiYuan\"]" > "$WORKSPACE_CONFIG_FILE";
+    echo "[\"$HOME/SiYuan\"]" > "$WORKSPACE_CONFIG_FILE";
 
     # Sending a notification to notice user
     # where they can export documents at the first time start.
