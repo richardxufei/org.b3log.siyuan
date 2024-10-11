@@ -14,6 +14,6 @@ to recover previous workspace:
 
 - Under your host filesystem, you can move `~/SiYuan` to `~/Documents/SiYuan` 
   and open this workspace via `Workspaces` function in SiYuan menu.
-- Coping folder `~/SiYuan` to `~/.var/app/org.b3log.siyuan/SiYuan`, 
+- Copying folder `~/SiYuan` to `~/.var/app/org.b3log.siyuan/SiYuan`, 
   but don't forget to clean up `~/.var/app/org.b3log.siyuan/SiYuan` to empty 
   before doing this.
