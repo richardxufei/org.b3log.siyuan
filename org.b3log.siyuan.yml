@@ -11,7 +11,6 @@ finish-args:
   - --persist=.config/siyuan
   - --persist=.config/SiYuan
   - --persist=.config/SiYuan-Electron
-
   # Allow Siyuan to read media files from host
   - --filesystem=xdg-pictures:ro
   - --filesystem=xdg-videos:ro
@@ -20,7 +19,6 @@ finish-args:
   - --filesystem=xdg-desktop
   - --filesystem=xdg-download
   - --filesystem=xdg-documents
-  
   - --share=ipc
   - --share=network
   - --socket=x11
