@@ -2,6 +2,25 @@
 
 set -oue pipefail
 
+WORKSPACE_CONFIG_FILE="$HOME/.config/siyuan/workspace.json"
+
+# Creating default workspace configuration when first time opening SiYuan
+# then Siyuan will initialize directly.
+#
+# For users who installed SiYuan, please copy folder `~/SiYuan` in host
+# to `~/.var/app/org.b3log.siyuan/SiYuan` to recover your data, but dont
+# forget to clean up `~/.var/app/org.b3log.siyuan/SiYuan` to empty at first.
+if [ ! -s "$WORKSPACE_CONFIG_FILE" ]; then
+    echo "[\"$HOME/SiYuan\"]" > "$WORKSPACE_CONFIG_FILE";
+
+    # Sending a notification to notice user
+    # where they can export documents at the first time start.
+    NOTIFICATION_BODY='You can only export documents such as pdf '\
+'to ~/Desktop, ~/Downloads and ~/Documents due to the Flakpak sandbox '\
+'limitation.'
+    notify-send "⚠️ Warning" "$NOTIFICATION_BODY"
+fi
+
 EXTRA_ARGS=(--enable-features=Vulkan)
 
 # Wayland support can be optionally enabled like so:

@@ -7,10 +7,19 @@ base-version: *runtime-version
 command: start-siyuan.sh
 finish-args:
   - --device=dri
-  - --filesystem=~/SiYuan
-  - --filesystem=~/.config/siyuan
-  - --filesystem=~/.config/SiYuan
-  - --filesystem=~/.config/SiYuan-Electron
+  - --persist=SiYuan
+  - --persist=.config/siyuan
+  - --persist=.config/SiYuan
+  - --persist=.config/SiYuan-Electron
+  # Allow Siyuan to read media files from host
+  - --filesystem=xdg-pictures:ro
+  - --filesystem=xdg-videos:ro
+  - --filesystem=xdg-music:ro
+  # Allow users to export documents and create new workspace
+  # to ~/Desktop, ~/Downloads and ~/Documents
+  - --filesystem=xdg-desktop
+  - --filesystem=xdg-download
+  - --filesystem=xdg-documents
   - --share=ipc
   - --share=network
   - --socket=x11
