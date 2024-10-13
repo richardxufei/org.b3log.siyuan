@@ -45,6 +45,7 @@
   <url type="homepage">https://b3log.org/siyuan/</url>
   <url type="bugtracker">https://github.com/flathub/org.b3log.siyuan/issues</url>
   <url type="donation">https://liuyun.io/sponsor</url>
+  <url type="faq">https://github.com/siyuan-note/siyuan#-faq</url>
   <url type="vcs-browser">https://github.com/siyuan-note/siyuan</url>
 
   <content_rating type="oars-1.1"/>
