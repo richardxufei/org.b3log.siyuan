@@ -6,7 +6,7 @@ Upstream repository: https://github.com/siyuan-note/siyuan .
 
 ## ⚠️NOTICE⚠️ ##
 
-Since version 3.1.8, SiYuan Flatpak is required to use `$XDG_CONFIG_HOME` instead of `$HOME due to` the Flatpak sandbox.  
+Since version 3.1.8, SiYuan Flatpak is required to use `$XDG_CONFIG_HOME` instead of `$HOME` due to the Flatpak sandbox.  
 See: https://github.com/flathub/org.b3log.siyuan/issues/47 .
 
 This breaking change will alter the workspace locations for users who already installed SiYuan Flatpak.
