@@ -5,7 +5,7 @@
   <name>SiYuan</name>
   <summary>A privacy-first personal knowledge management system, support fine-grained block-level reference and Markdown WYSIWYG</summary>
 
-  <developer_name>Yunnan Liandi Technology Co., Ltd.</developer_name>
+  <developer_name>SiYuan Flatpak Community</developer_name>
 
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>AGPL-3.0</project_license>
@@ -38,6 +38,10 @@
       each other, splitting, reorganizing and moving do not affect existing links.</p>
     <p>List outline: Sort out the main points, logically layered</p>
     <p>Multi-device data sync: Keep data complete and consistent</p>
+    <p>------------------------</p>
+    <p><em>⚠️This distribution is maintained by volunteers, not by SiYuan team.⚠️</em></p>
+    <p><em>Project URL: </em></p><p><em><code>https://github.com/flathub/org.b3log.siyuan</code></em></p>
+    <p><em>Contributions are welcome.</em></p>
   </description>
 
   <launchable type="desktop-id">org.b3log.siyuan.desktop</launchable>
